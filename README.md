@@ -4,10 +4,11 @@
 
 **基于 Jetpack Compose 与高德地图 3D SDK 构建的轻量、端侧安全型个人行程与足迹规划应用**
 
-[![Platform](https://img.shields.io/badge/Platform-Android%207.0%2B-blue.svg)](https://developer.android.com)
-[![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-purple.svg)](https://kotlinlang.org)
-[![Compose](https://img.shields.io/badge/Jetpack%20Compose-BOM%202024.09.00-brightgreen.svg)](https://developer.android.com/jetpack/compose)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Android%207.0%2B-57C278?logo=android&logoColor=white)](https://developer.android.com)
+[![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-7F52FF?logo=kotlin&logoColor=white)](https://kotlinlang.org)
+[![Compose](https://img.shields.io/badge/Compose-BOM%202024.09.00-4285F4?logo=jetpackcompose&logoColor=white)](https://developer.android.com/jetpack/compose)
+[![Gradle](https://img.shields.io/badge/Gradle-8.11-02303A?logo=gradle&logoColor=white)](https://gradle.org)
+[![License](https://img.shields.io/badge/License-Apache%202.0-1877F2?logo=apache&logoColor=white)](LICENSE)
 
 </div>
 
@@ -41,21 +42,21 @@
 
 ```mermaid
 graph TD
-    subgraph UI_Layer [UI 表现层 (Jetpack Compose)]
-        MA[MainActivity<br/>• 顶层状态管理<br/>• 主页面交互容器]
-        TC[TripCreateAndEdit<br/>• 行程规划与编辑<br/>• 地点增删与排序]
-        TD[TripDetail<br/>• 行程详情抽屉<br/>• 每日节点与时间轴]
-        ID[ImageDetail<br/>• 点位照片相册<br/>• 媒体全屏浏览]
+    subgraph UI_Layer ["UI 表现层 (Jetpack Compose)"]
+        MA["MainActivity<br/>• 顶层状态管理<br/>• 主页面交互容器"]
+        TC["TripCreateAndEdit<br/>• 行程规划与编辑<br/>• 地点增删与排序"]
+        TD["TripDetail<br/>• 行程详情抽屉<br/>• 每日节点与时间轴"]
+        ID["ImageDetail<br/>• 点位照片相册<br/>• 媒体全屏浏览"]
     end
 
-    subgraph Service_Layer [业务支撑与引擎层]
-        MT[MapTool<br/>• 3D 矢量地图渲染<br/>• POI 检索与标记打点<br/>• 驾车/公交/骑行/步行路线规划]
-        SM[StorageManager<br/>• 本地 JSON 结构序列化<br/>• 图片附件存储与关联<br/>• 数据导入与导出 ZIP 封包]
+    subgraph Service_Layer ["业务支撑与引擎层"]
+        MT["MapTool<br/>• 3D 矢量地图渲染<br/>• POI 检索与标记打点<br/>• 驾车/公交/骑行/步行路线规划"]
+        SM["StorageManager<br/>• 本地 JSON 结构序列化<br/>• 图片附件存储与关联<br/>• 数据导入与导出 ZIP 封包"]
     end
 
-    subgraph Infra_Layer [底层依赖与平台]
-        AMAP[高德地图 3D SDK & 定位/搜索服务]
-        DISK[Android 内部沙盒文件系统]
+    subgraph Infra_Layer ["底层依赖与平台"]
+        AMAP["高德地图 3D SDK & 定位/搜索服务"]
+        DISK["Android 内部沙盒文件系统"]
     end
 
     MA --> TC
