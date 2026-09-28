@@ -1,0 +1,69 @@
+# =========================================================================
+# Android & Gradle Git Ignore Rules
+# =========================================================================
+
+# Built application files & artifacts
+*.apk
+*.ap_
+*.aab
+*.dex
+
+# Java class & library files
+*.class
+*.jar
+!app/libs/*.jar
+
+# Generated build directories
+build/
+*/build/
+out/
+bin/
+gen/
+
+# Gradle files and caches
+.gradle/
+buildOutput/
+
+# Local machine configuration & SDK paths (NEVER COMMIT)
+local.properties
+local.properties.bak
+*.local
+
+# Keystore files & credentials (CRITICAL: NEVER COMMIT PRIVATE KEYS)
+*.jks
+*.keystore
+*.key
+*.pem
+*.p12
+
+# IntelliJ IDEA / Android Studio project files
+*.iml
+.idea/
+.kotlin/
+.navigation/
+
+# Android Studio captures folder & Profiler
+captures/
+
+# OS specific temporary files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Log files & crash dumps
+*.log
+*.tmp
+hs_err_pid*
+replay_pid*
+
+# Test and UI hierarchy dumps
+ui*.xml
+dump*.xml
+screenshot*.png
+
+# Non-public planning or handoff drafts
+HANDOFF.md
+PLAN.md
+.zcode/
+.secrets/

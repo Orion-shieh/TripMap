@@ -1,0 +1,16 @@
+## This file is a template for local.properties.
+## Copy this file to "local.properties" and fill in your own settings.
+## Notice: "local.properties" is ignored by Git and should NEVER be committed.
+
+# Location of the Android SDK (Android Studio generates this automatically):
+# sdk.dir=C\:\\Users\\<YourUsername>\\AppData\\Local\\Android\\Sdk
+
+# AMap (高德地图) API Key for Android platform:
+# Register and create an Android key at https://lbs.amap.com/
+AMAP_API_KEY=YOUR_AMAP_API_KEY
+
+# Optional: Release Signing Configuration (if signing with a custom keystore)
+# KEYSTORE_FILE=../trip_map_key.jks
+# KEYSTORE_PASSWORD=your_keystore_password
+# KEY_ALIAS=your_key_alias
+# KEY_PASSWORD=your_key_password
